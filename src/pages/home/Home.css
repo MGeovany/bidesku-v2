@@ -1,0 +1,28 @@
+.container {
+  padding: 1.5rem;
+}
+
+.title {
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.graph__container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  padding: 1.2rem;
+}
+
+.box__content {
+  height: 15rem;
+}
+
+.button__large {
+  margin: 0 2rem;
+}
+
+.table__header {
+  background-color: #00d1b2 !important;
+}

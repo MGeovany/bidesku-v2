@@ -1,11 +1,14 @@
+@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+:root {
+  --primary: #7cd0df;
+  --secondary: #191410;
+  --terciary: #fafafa;
+}
+
 .App {
-  text-align: center;
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  font-family: 'Inter', sans-serif;
 }
