@@ -18,11 +18,11 @@ export const TableHome = () => {
           </div>
         </div>
       </div>
-      <div className='card table__header mt-6'>
-        <div className='pending__table mt-3'>
+      <div className='card table__header mt-2'>
+        <div className='pending__table mt-4'>
           <table className='table is-fullwidth is-striped is-hoverable'>
             <thead className='table__header '>
-              <tr>
+              <tr className=''>
                 <th className='has-text-white'>Contract ID</th>
                 <th className='has-text-white'>Date Modified</th>
                 <th className='has-text-white'>Full Name</th>

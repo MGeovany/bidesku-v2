@@ -5,7 +5,7 @@ import { Home } from './pages/home/Home'
 import { Clients } from './pages/clients/Clients'
 import { Estimator } from './pages/estimator/Estimator'
 import { Faq } from './pages/faq/Faq'
-import { Sidebar } from './components/Sidebar/Sidebar'
+import { Sidebar } from './components/Sidebar'
 
 function App() {
   return (

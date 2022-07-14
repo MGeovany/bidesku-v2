@@ -1,5 +1,5 @@
 import React from 'react'
-import './Sidebar.css'
+import './styles/Sidebar.css'
 import { Link } from 'react-router-dom'
 // This is the component that will be rendered in the sidebar.
 // This component is buit with Bulma.
