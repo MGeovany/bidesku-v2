@@ -11,7 +11,7 @@ export const Header = ({ legend, buttons }) => {
       <div className=''>
         {buttons?.map((btn, i) => (
           <button
-            className='button is-primary ml-2'
+            className={`button is-primary ml-2 ${i === 0 && 'is-outlined'}`}
             onClick={btn.onClick}
             key={i}
           >

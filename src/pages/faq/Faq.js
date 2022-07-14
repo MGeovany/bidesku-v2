@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaqDocuments } from '../../components/FaqDocuments'
 import { Header } from '../../components/Header'
 
 export const Faq = () => {
@@ -11,6 +12,7 @@ export const Faq = () => {
         buttons={[
           {
             label: 'Download All',
+
             onClick: () => {
               alert('hi')
             }
@@ -23,6 +25,7 @@ export const Faq = () => {
           }
         ]}
       />
+      <FaqDocuments />
     </div>
   )
 }

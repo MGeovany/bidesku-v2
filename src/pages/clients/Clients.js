@@ -1,5 +1,7 @@
 import React from 'react'
+import { ContractsTable } from '../../components/ContractsTable'
 import { Header } from '../../components/Header'
+import { DropdowContracts } from '../../components/DropdowContracts'
 
 export const Clients = () => {
   return (
@@ -17,6 +19,9 @@ export const Clients = () => {
           }
         ]}
       />
+      <br />
+      <hr />
+      <ContractsTable dpdwn={<DropdowContracts />} />
     </div>
   )
 }
