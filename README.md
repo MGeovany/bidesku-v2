@@ -6,13 +6,13 @@
 
 ## 🦾 Technologies
 
-- [React JS](https://es.reactjs.org/)
+- <img src='technologies/bulma-svrepo-com.svg'/> [React JS](https://es.reactjs.org/)
 
 - [Bulma](https://bulma.io/documentation/)
 
-- [Chart.js](https://www.chartjs.org/)
+- <img src='technologies/chart.png'/>[Chart.js](https://www.chartjs.org/)
 
-- [Vercel](https://vercel.com/)
+- <img src='technologies/vercel-svrepo-com.svg'/> [Vercel](https://vercel.com/)
 
 ## 🚀 Get Started
 
