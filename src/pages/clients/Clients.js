@@ -19,8 +19,7 @@ export const Clients = () => {
           }
         ]}
       />
-      <br />
-      <hr />
+
       <ContractsTable dpdwn={<DropdowContracts />} />
     </div>
   )

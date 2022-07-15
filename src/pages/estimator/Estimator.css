@@ -1,0 +1,52 @@
+.container__estimator {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'client Funds Funds'
+    'client Funds Funds'
+    'share Funds Funds';
+}
+
+.client__estimator {
+  grid-area: client;
+}
+
+.share__estimator {
+  grid-area: share;
+}
+
+.funds__estimator {
+  grid-area: Funds;
+}
+
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #50c499;
+  cursor: pointer;
+}
+.tabs.is-toggle li.is-active a {
+  background-color: #00d1b2 !important;
+  border: 0;
+}

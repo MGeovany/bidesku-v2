@@ -20,7 +20,6 @@ export const Home = () => {
           }
         ]}
       />
-      <hr />
       <Graphics />
       <ContractsTable label={'Pending Actions'} />
     </div>
