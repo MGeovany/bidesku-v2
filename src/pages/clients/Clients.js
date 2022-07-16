@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 
 export const Clients = () => {
   return (
-    <div className='container is-flex is-flex-direction-column'>
+    <div className='page__container container is-flex is-flex-direction-column'>
       <motion.div
         initial={{ y: 25, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
