@@ -9,7 +9,7 @@ export const ClientProfile = () => {
 
   return (
     <div>
-      <div className='card'>
+      <div className='card is-flex'>
         <div className='card-content'>
           <section className='client__profile'>
             <div className='subtitle'>
