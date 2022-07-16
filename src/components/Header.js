@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
+import { motion } from 'framer-motion'
 
 export const Header = ({ legend, buttons }) => {
   return (
@@ -9,15 +10,16 @@ export const Header = ({ legend, buttons }) => {
           {legend.label}
           <i className='has-text-primary'>{legend.user}</i>
         </h2>
-        <div className=''>
+        <div>
           {buttons?.map((btn, i) => (
-            <button
-              className={`button is-primary ml-2 ${i === 0 && 'is-outlined'}`}
-              onClick={btn.onClick}
-              key={i}
-            >
-              <strong>{btn.label}</strong>
-            </button>
+            <motion.div key={i} whileTap={{ scale: 0.8 }}>
+              <button
+                className={`button is-primary ml-2 ${i === 0 && 'is-outlined'}`}
+                onClick={btn.onClick}
+              >
+                <strong>{btn.label}</strong>
+              </button>
+            </motion.div>
           ))}
         </div>
       </div>
