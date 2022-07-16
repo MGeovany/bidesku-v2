@@ -9,7 +9,9 @@
     'client Funds Funds'
     'share Funds Funds';
 }
-
+.estimator__card__container {
+  height: 100%;
+}
 .client__estimator {
   grid-area: client;
 }
