@@ -8,13 +8,13 @@ import { motion } from 'framer-motion'
 import './Estimator.css'
 export const Estimator = () => {
   return (
-    <motion.div
-      initial={{ y: 25, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: -25, opacity: 0 }}
-      transition={{ duration: 0.7 }}
-    >
-      <div className='container is-flex is-flex-direction-column'>
+    <div className='container is-flex is-flex-direction-column'>
+      <motion.div
+        initial={{ y: 25, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: -25, opacity: 0 }}
+        transition={{ duration: 0.7 }}
+      >
         <Header
           legend={{
             label: 'Estimator'
@@ -31,7 +31,7 @@ export const Estimator = () => {
             <Funds />
           </div>
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }

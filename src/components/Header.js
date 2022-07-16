@@ -10,11 +10,11 @@ export const Header = ({ legend, buttons }) => {
           {legend.label}
           <i className='has-text-primary'>{legend.user}</i>
         </h2>
-        <div>
+        <div className='is-flex is-flex-direction-row'>
           {buttons?.map((btn, i) => (
             <motion.div key={i} whileTap={{ scale: 0.8 }}>
               <button
-                className={`button is-primary ml-2 ${i === 0 && 'is-outlined'}`}
+                className={`button is-primary ml-2 ${i === 1 && 'is-outlined'}`}
                 onClick={btn.onClick}
               >
                 <strong>{btn.label}</strong>

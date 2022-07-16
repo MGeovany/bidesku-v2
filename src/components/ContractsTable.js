@@ -2,10 +2,11 @@
 /* eslint-disable react/prop-types */
 import React from 'react'
 import { TableActions } from './TableActions'
+import faker from 'faker'
 
 export const ContractsTable = ({ label, dpdwn }) => {
   return (
-    <div>
+    <>
       <div className='mt-5 pending__actions is-flex is-flex-direction-column'>
         <div className='header is-flex is-flex-direction-row is-justify-content-space-between is-align-items-center is-text-align-center'>
           {label ? (
@@ -39,43 +40,32 @@ export const ContractsTable = ({ label, dpdwn }) => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1651561532</td>
-                <td>June 2, 2022</td>
-                <td>Jhon Jefferson Smith</td>
-                <td>$ 1,235.15</td>
-                <td>Created</td>
-                <td>
-                  <button className='button is-success  is-outlined'>
-                    <span className='button__large'>Edit</span>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>2361561532</td>
-                <td>June 2, 2022</td>
-                <td>Jhon Douglas Jackson</td>
-                <td>$ 1,456.11</td>
-                <td>Signed</td>
-                <td>
-                  <button className='button is-success  is-outlined'>
-                    <span className='button__large'>Edit</span>
-                  </button>
-                </td>
-              </tr>
-              <tr>
-                <td>1651563242</td>
-                <td>June 2, 2022</td>
-                <td>Jhon Junior Doe</td>
-                <td>$ 2,232.05</td>
-                <td>Sent to Client</td>
-                <td>
-                  <button className='button is-success  is-outlined'>
-                    <span className='button__large'>Edit</span>
-                  </button>
-                </td>
-              </tr>
-              <tr></tr>
+              {
+                // fake data from faker
+                // eslint-disable-next-line no-plusplus
+                [...Array(10)].map((_, i) => (
+                  <tr key={i}>
+                    <td>
+                      {faker.random.number({ min: 100000, max: 10000000 })}
+                    </td>
+                    <td>{faker.date.recent().toLocaleDateString()}</td>
+                    <td>{`${faker.name.firstName()} ${faker.name.firstName()}`}</td>
+                    <td>{faker.finance.amount(0, 10000, 2, '$')}</td>
+                    <td>
+                      {faker.random.arrayElement([
+                        'Pending',
+                        'Approved',
+                        'Rejected'
+                      ])}
+                    </td>
+                    <td>
+                      <button className='button is-primary is-outlined px-5'>
+                        Editar
+                      </button>
+                    </td>
+                  </tr>
+                ))
+              }
             </tbody>
           </table>
         </div>
@@ -83,6 +73,6 @@ export const ContractsTable = ({ label, dpdwn }) => {
       <div className='mt-5'>
         <TableActions />
       </div>
-    </div>
+    </>
   )
 }

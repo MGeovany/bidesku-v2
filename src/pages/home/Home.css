@@ -1,6 +1,9 @@
 .container {
   padding: 1.5rem;
 }
+.page__container {
+  background-color: #f8f9fb !important;
+}
 
 .title {
   font-weight: 700;
@@ -9,9 +12,6 @@
 }
 
 .graph__container {
-  width: 100%;
-  height: auto;
-  position: relative;
   padding: 1.2rem;
 }
 

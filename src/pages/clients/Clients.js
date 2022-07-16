@@ -6,13 +6,13 @@ import { motion } from 'framer-motion'
 
 export const Clients = () => {
   return (
-    <motion.div
-      initial={{ y: 25, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
-      exit={{ y: -25, opacity: 0 }}
-      transition={{ duration: 0.7 }}
-    >
-      <div className='container is-flex is-flex-direction-column'>
+    <div className='container is-flex is-flex-direction-column'>
+      <motion.div
+        initial={{ y: 25, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        exit={{ y: -25, opacity: 0 }}
+        transition={{ duration: 0.7 }}
+      >
         <Header
           legend={{
             label: 'Clients & Contracts'
@@ -27,7 +27,7 @@ export const Clients = () => {
           ]}
         />
         <ContractsTable dpdwn={<DropdowContracts />} />
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   )
 }

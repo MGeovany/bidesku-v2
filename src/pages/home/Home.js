@@ -14,7 +14,7 @@ export const Home = () => {
 
   return (
     <>
-      <div className='container is-flex is-flex-direction-column '>
+      <div className='page__container container is-flex is-flex-direction-column is-flex-wrap-wrap'>
         <motion.div
           initial={{ y: 25, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
@@ -35,8 +35,10 @@ export const Home = () => {
               }
             ]}
           />
-          <Graphics />
-          <ContractsTable label={'Pending Actions'} />
+          <div className='is-flex is-flex-direction-column'>
+            <Graphics />
+            <ContractsTable label={'Pending Actions'} />
+          </div>
         </motion.div>
         {isModalOpen && (
           <CreateContract isModalOpen={isModalOpen} toggleModal={toggleModal} />
