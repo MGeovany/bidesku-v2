@@ -14,6 +14,8 @@
 
 - [Vercel](https://vercel.com/)
 
+- [Framer Motion](https://www.framer.com/motion/)
+
 ## 🚀 Get Started
 
 You need to be using:
@@ -26,9 +28,9 @@ Clone the repository & install dependencies:
 
 ```bash
 
-git clone https://github.com/eriandev/weather-app.git
+git clone https://github.com/eriandev/bidesku-v2
 
-cd weather-app
+cd bidesku-v2
 
 npm install
 
