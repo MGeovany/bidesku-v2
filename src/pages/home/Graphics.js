@@ -65,7 +65,7 @@ export const dataCompany = {
 export const Graphics = () => {
   return (
     <>
-      <div className='is-flex is-flex-direction-row is-justify-content-space-around'>
+      <div className='is-flex-wrap-wrap is-flex is-flex-direction-row is-justify-content-space-around'>
         <div className='card p-6 mb-4'>
           <div className='mx-6'>
             <Doughnut data={dataCommerce} options={options} />

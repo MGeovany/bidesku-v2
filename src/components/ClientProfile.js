@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-
+import Slider from 'react-input-slider'
 export const ClientProfile = () => {
   const [active, setActive] = useState('lump')
-
+  const [state, setState] = useState({ x: 50 })
   const handleClick = (e) => {
     setActive(e.target.id)
   }
@@ -62,14 +62,32 @@ export const ClientProfile = () => {
                 <strong className='is-size-6'>INVESTMENT AMOUNT</strong>
               </p>
               <div className='slidecontainer pt-4'>
-                <input
-                  type='range'
-                  min='1'
-                  max='100'
-                  className='slider'
-                  id='myRange'
-                  value={'30'}
-                  onChange={(e) => console.log(e.target.value)}
+                <Slider
+                  styles={{
+                    track: {
+                      // backgroundColor: '#dedede'
+                      backgroundColor: '#dedede',
+                      height: '10px',
+                      width: '100%'
+                    },
+                    active: {
+                      backgroundColor: '#00d1b2'
+                    },
+                    thumb: {
+                      width: 30,
+                      height: 30,
+                      border: '2px solid #00d1b2'
+                    },
+                    disabled: {
+                      opacity: 0.5
+                    }
+                  }}
+                  xmin={50}
+                  xmax={500}
+                  axis='x'
+                  xstep={10}
+                  x={state.x}
+                  onChange={({ x }) => setState((state) => ({ ...state, x }))}
                 />
               </div>
             </div>
@@ -87,7 +105,9 @@ export const ClientProfile = () => {
             </div>
             <div className='subtitle is-flex is-justify-content-center'>
               <p>
-                <strong className='is-size-3 has-text-primary'>$100K</strong>
+                <strong className='is-size-3 has-text-primary'>
+                  ${state.x}K
+                </strong>
               </p>
             </div>
           </section>

@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 export const Sidebar = () => {
   return (
     <div className='sidebar'>
-      <div className='menu-container px-1 has-background-black-ter'>
+      <div className='is-flex is-flex-direction-column menu-container px-1 has-background-black-ter'>
         <p className='title'>
           <img src='/bideskutext.png' alt='logo' />
         </p>

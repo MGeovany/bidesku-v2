@@ -35,7 +35,7 @@ export const Home = () => {
               }
             ]}
           />
-          <div className='is-flex is-flex-direction-column'>
+          <div className='is-flex is-flex-direction-column '>
             <Graphics />
             <ContractsTable label={'Pending Actions'} />
           </div>

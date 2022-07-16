@@ -4,6 +4,11 @@ export const ShareEstimator = () => {
   return (
     <div className='card estimator__card__container is-flex is-flex-direction-column is-justify-content-center'>
       <div className='card-content '>
+        <div className='subtitle '>
+          <p>
+            <strong className='is-size-6'>SHARE INFORMATION</strong>
+          </p>
+        </div>
         <section className='email__input '>
           <input
             className='input is-success'
