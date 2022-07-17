@@ -22,6 +22,7 @@
 
 .funds__estimator {
   grid-area: Funds;
+  min-width: 500px;
 }
 
 .slidecontainer {
