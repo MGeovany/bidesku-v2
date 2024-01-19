@@ -3,6 +3,7 @@
 </h1>
 
 ## 🖥️ Preview
+<img src="public/bidesku.webp"/>
 
 ## 🦾 Technologies
 
