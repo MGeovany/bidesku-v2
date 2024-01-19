@@ -16,14 +16,6 @@ export const ContractsTable = ({ label, dpdwn }) => {
           ) : (
             dpdwn
           )}
-          <div className='searchbar is-flex is-flex-direction-row field is-grouped'>
-            <p className='control is-expanded'>
-              <input className='input' type='text' placeholder='Search' />
-            </p>
-            <p className='control'>
-              <button className='button is-primary'>Search</button>
-            </p>
-          </div>
         </div>
       </div>
       <div className='card table__header mt-2'>
@@ -60,7 +52,7 @@ export const ContractsTable = ({ label, dpdwn }) => {
                     </td>
                     <td>
                       <button className='button is-primary is-outlined px-5'>
-                        Editar
+                        Edit
                       </button>
                     </td>
                   </tr>

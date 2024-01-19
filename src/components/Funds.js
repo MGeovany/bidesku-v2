@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {
   Chart as ChartJS,
   CategoryScale,
@@ -9,7 +9,6 @@ import {
   Legend
 } from 'chart.js'
 import { Bar } from 'react-chartjs-2'
-// import faker from 'faker'
 
 ChartJS.register(CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend)
 
@@ -28,8 +27,7 @@ export const options = {
 }
 
 export const Funds = () => {
-  const [age, setAge] = useState(72)
-
+  const age = 72
   const labels = [age, 'Age 75', 'Age 85', 'Age 90']
 
   const data = {
@@ -37,7 +35,7 @@ export const Funds = () => {
     datasets: [
       {
         label: 'Index Funds Alone',
-        data: [190000, 240000, 430000, 575000],
+        data: [290000, 240000, 430000, 575000],
         backgroundColor: 'rgb(155,164,179)'
       },
       {

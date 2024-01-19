@@ -37,7 +37,7 @@ export const Home = () => {
           />
           <div className='is-flex is-flex-direction-column '>
             <Graphics />
-            <ContractsTable label={'Pending Actions'} />
+            <ContractsTable label={'Contracts Table'} />
           </div>
         </motion.div>
         {isModalOpen && (
